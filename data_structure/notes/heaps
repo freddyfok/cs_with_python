@@ -1,0 +1,35 @@
+A heap data structure implements a priority queue ADT
+Priority queue is a queue that serves the element with the highest priority
+It deals with arrays using a tree structure
+Working with tree structures allows for better complexity
+Because of the min/max heap property, it simplifies sorting
+
+Property of Heap:
+the tree is filled top to bottom, left to right
+min heap: parent is always smaller than child
+max heap: parent is always greater than child
+
+ex.
+      0
+    1   2
+  3  4 5  6
+
+at any point i besides the root:
+parent's index = (i - 1) / 2
+left child     = (i * 2) + 1
+right child    = (i * 2) + 2
+
+Methods of a heap:
+peek() - o(1) - returns the value of the root node
+delete() - o(h) - delete root node, replace with last node, then heapify down
+insert() - o(h) - insert at next empty node, then heapify up
+heapify - o(h) - used to correct a violation of the heap property
+            it applies recursively at one node.
+            heapify_up() is used for insert, compared against parents
+            heapify_down() is used for delete, compared against children
+build_heap() - o(nlogn) - if an array is given, you can use the insert method
+                to heapify the array for each element.
+                however, a more optimal solution is to find the location
+                of the last parent, and start bubbling down the
+                numbers (ie. heapify down).
+ref in c++: https://www.techiedelight.com/min-heap-max-heap-implementation-c/

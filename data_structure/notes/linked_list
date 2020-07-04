@@ -1,0 +1,8 @@
+A data structure comprised of nodes.
+Nodes are a class/struct/block of data that consist the value and the pointer to the next node
+Singly, Doubly, Circle...
+
+Access  o(n)
+Search  o(n)
+Insert  o(1) - because you know where the
+Delete  o(n)

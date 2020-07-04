@@ -1,0 +1,27 @@
+problem:
+1) using arrays is that the search key isn't integers
+So it is hard to look for something if you dont know the index
+2) uses too much memory, especially when you need to know before compiling
+
+solution:
+1) pre-hash: maps keys to non negative integers
+python has an hash(x) function
+__hash__(x), you can pass in something. by default, it uses the memory id
+
+2) hashing:
+reduces universe of all keys down to reasonable size integer for the table
+
+3) chaining:
+if there are any collisions, then you can use a linked list to extend that key
+
+hashing functions, hash(x)
+1) division method
+h(k) = k mod m
+con: not so good when m is even, use prime numers
+
+2) multiplication method
+h(k) = [(a*k) mod 2**w] >> (w-r) where w is bits and r bits of MSB of w
+
+3) universal hashing
+h(k) =[(ak+b) mod p] mod m
+

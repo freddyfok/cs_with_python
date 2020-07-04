@@ -1,0 +1,28 @@
+self balancing property is added to a binary tree
+it helps with the skewness of the tree
+
+what is avl balanced tree?
+the difference between the left and right subtree is -1, 0, or 1
+left heavy tree is positive, right heavy tree is negative
+
+how to fix?
+you want to rotate the tree
+left-heavy:
+1) right
+2) left-right
+
+right-heavy:
+3) left
+4) right-left
+
+you check every time you insert
+
+steps:
+1) insert like regular tree
+2) update the height of tree
+3) find if balanced
+4) rotate
+
+AVL sort:
+1) insert
+2) in order traversal

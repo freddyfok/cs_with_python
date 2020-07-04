@@ -1,0 +1,19 @@
+Arrays takes up a block of memory.
+Each element is right after another element
+Arrays are pointers in C.
+
+Pros:
+Because it is index, accessing is very fast
+
+Cons:
+- Most static language requires the size of array before compiling,
+unless the array is dynamically allocated.
+- Can create dynamic array with static array by creating a new array,
+double the size, copy everything over
+
+        Static Dynamic
+Access  o(1)    o(1)
+Search  o(n)    o(n)
+Insert  n/a     o(n)
+Append  n/a     o(1)
+Delete  n/a     o(n)

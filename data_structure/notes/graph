@@ -1,0 +1,25 @@
+Tree is a special Graph
+A graph G is an ordered pair of a set V of vertices and a set E of edges
+G = (V,E)
+
+
+directed or undirected
+example of undirected is social network
+if you have 3 friends, the 3 friend's connection can be recommended to you
+the interview question can be like: find all nodes having length of shortest path from a node equal to 2
+
+example of directed is web pages
+normally you can only go from one page to another
+web crawling is a graph traversal
+
+weighted vs unweighted
+intercity road, the length can represent the weight
+you can use 1 to represent an unweighted graph
+
+number of edges
+for directed: n(n-1)
+for undirected: n(n-1)/2
+
+to minimum the space complexity of storing graphs,
+you can pass in the vertex list array
+then the edge list will point to the vertex list by referencing the array index
