@@ -7,10 +7,8 @@ solution:
 1) pre-hash: maps keys to non negative integers
 python has an hash(x) function
 __hash__(x), you can pass in something. by default, it uses the memory id
-
 2) hashing:
 reduces universe of all keys down to reasonable size integer for the table
-
 3) chaining:
 if there are any collisions, then you can use a linked list to extend that key
 
@@ -18,10 +16,44 @@ hashing functions, hash(x)
 1) division method
 h(k) = k mod m
 con: not so good when m is even, use prime numers
-
 2) multiplication method
 h(k) = [(a*k) mod 2**w] >> (w-r) where w is bits and r bits of MSB of w
-
 3) universal hashing
 h(k) =[(ak+b) mod p] mod m
 
+string matching:
+rabin karp algo (ie. rolling hash)
+
+*************************IMPORTANT************************************
+Table doubling:
+"o(1) amortized"
+m' = 2m, doubling the table has best time and space complexity
+when you need to grow, cost of inserting n into m:
+Q(1+2+4+8+..+n) = Q(n), not constant time
+However, amortization
+Basically, if you do a bunch of operation, you will eventually get to o(1)
+spread out the high cost, so it is cheap on average all the time
+
+also true for deletion.
+but, trigger halfing when size is smaller than a fourth instead of just below half
+
+********************** open addressing ******************************
+insert into the hash table without a linked list
+meaning only one value per element is possible
+
+insert(key, value):
+keep probing until empty slot, insert in that slot
+
+search(key):
+while other keys isn't "key", keep probing until "key" or empty slot is found
+continue if "deleteMe" is found
+
+delete(key):
+once the key is found, delete the key by replacing it with "deleteMe" flag instead of None
+this way, other key relying on this key will know that there is a "linked" item down the list
+
+the problem with linear hashing is clustering
+this means keys are grouped together in memory
+any operation passed the first one might need to find another empty slot
+
+uniform hashing assumption

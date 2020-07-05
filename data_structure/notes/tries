@@ -1,0 +1,5 @@
+tries is a tree that stores characters instead
+array of children, or lookup table
+
+class Node:
+    

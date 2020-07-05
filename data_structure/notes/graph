@@ -2,7 +2,6 @@ Tree is a special Graph
 A graph G is an ordered pair of a set V of vertices and a set E of edges
 G = (V,E)
 
-
 directed or undirected
 example of undirected is social network
 if you have 3 friends, the 3 friend's connection can be recommended to you
