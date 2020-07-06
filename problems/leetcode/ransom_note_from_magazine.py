@@ -35,6 +35,7 @@ def ransom_note(magazine: List[str], note: List[str]) -> bool:
 
     return True
 
+
 str_1 = "some stupid people are stupid"
 str_2 = "some stupid as"
 str_1 = str_1.split(" ")
