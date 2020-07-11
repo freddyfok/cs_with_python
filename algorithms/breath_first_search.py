@@ -2,6 +2,7 @@
 use to traverse graphs (binary tress are special graphs)
 used in web crawling, social networking, networking, garbage collection
 normally, you get the shortest path to somewhere with bfs
+**goes wide
 
 example rubiks cube
 2x2x2 cube

@@ -1,6 +1,7 @@
 """
 recursively explore the graph, backtracking as necessary
 it explores the whole graph until the answer is found
+**goes deep
 
 parent = {s: None}
 DFS_visit(v, adj, s): #iterate from s
