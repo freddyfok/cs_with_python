@@ -7,3 +7,5 @@ def hand_dif(hour, minute):
     if angle > 0:
         return 360 - angle
     return abs(angle)
+
+#end
