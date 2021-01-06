@@ -6,6 +6,7 @@ class TwoStackQueue:
     def __init__(self):
         self._old_on_top_stack = Stack()
         self._new_on_top_stack = Stack()
+	self._zeros = 0
 
     def queue(self, value):
         new_node = Node(value)
