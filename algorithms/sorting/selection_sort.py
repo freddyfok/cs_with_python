@@ -1,7 +1,10 @@
 """
 selection sort
 basically, you linear search for the smallest
-then put it in the next available index
+then swap it with the current index
+
+time = o(n^2)
+
 """
 
 

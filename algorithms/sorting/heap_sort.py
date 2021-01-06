@@ -1,4 +1,9 @@
 """
+in place
+unstable sort (stable sort means that order is maintained after sort if it has a key)
+(in other words, it is not guaranteed that the object appearing first will also appear first when it is sorted)
+
+
 heap sort uses the heap data structure
 for ascending order sort, build a max heap
 for descending order sort, build a min heap

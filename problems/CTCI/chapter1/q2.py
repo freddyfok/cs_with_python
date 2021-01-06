@@ -17,8 +17,8 @@ def is_permutation(str1: str, str2: str):
         if i not in count_dict:
             return False
         count_dict[i] -= 1
-        if count_dict[i] == 0:
-            count_dict.pop(i)
+        if count_dict[i] < 0:
+            return False
     return True
 
 if __name__ == "__main__":

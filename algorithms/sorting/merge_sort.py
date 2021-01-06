@@ -1,3 +1,14 @@
+"""
+type of algo of merge sort
+1) Divide and conquer
+2) Recursive
+3) Stable
+4) Not in place
+
+time: o(n logn)
+space: o(n)
+"""
+
 def merge(left_array, right_array):
     tmp_array = []
     n = 0
