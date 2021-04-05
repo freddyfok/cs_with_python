@@ -5,6 +5,6 @@ from typing import Optional
 
 
 class Node:
-    def __init__(self, value: any):
-        self.value: any = value
-        self.next_node: Optional[Node] = None
+    def __init__(self, value: any, next_: Optional["Node"] = None):
+        self.value = value
+        self.next_node = next_
